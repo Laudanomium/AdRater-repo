@@ -1,0 +1,14 @@
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\AdRaterPackage.exe.config
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\PackageInfo.xml
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\AdRaterPackage.XML
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\AdRaterPackage.exe
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\AdRaterPackage.pdb
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Constellation.Common.dll
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Newtonsoft.Json.dll
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Constellation.Common.xml
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\bin\Debug\Newtonsoft.Json.xml
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\obj\Debug\AdRaterPackage.csprojResolveAssemblyReference.cache
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\obj\Debug\AdRaterPackage.exe
+c:\users\isen\documents\visual studio 2015\Projects\AdRater\AdRaterPackage\obj\Debug\AdRaterPackage.pdb

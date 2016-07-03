@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script>
+        var inputValue = "";
+        var associatedImageSrc = "";
+
+        google.load('search', '1');
+        google.setOnLoadCallback(function () {
+            var customSearchControl = new google.search.CustomSearchControl("012688760125608160490:toe8cgknm8m");
+
+
+            var imageSearch = customSearchControl.getImageSearcher();
+
+            customSearchControl.setSearchCompleteCallback(this, function () {
+
+                console.log("search completed");
+                inputValue = customSearchControl.getInputQuery();
+
+                var images = $("img.gs-image").slice(0);
+                document.getElementById("custom test").remove();
+                for (var i = 1; i < images.length; i++) {
+                    if (images[i].src == images[i - 1].src) {
+                        images.splice(i, 1);
+                        i--;
+                    }
+                }
+
+                $("#tableau").prepend(images);
+
+                for (var i = 0; i < images.length; i++) {
+                    $("#tableau img")[i].id = "tabImg" + i;
+                }
+
+                $("#tableau img").each(function (index) {
+                    $(this).click(function () {
+                        console.log($(this)[0].src);
+                        associatedImageSrc = $(this)[0].src;
+                    });
+                });
+            });
+            //div dans lequel on affiche la barre de recherche
+            customSearchControl.draw('custom test');
+        }, true);
+
+
+        function sendElems() {
+            console.log(inputValue + " / " + associatedImageSrc);
+        }
+
+        $("#tableau img").each(function () {
+            $("#tableau img").width(840);
+            $("#tableau img").height(420);
+        });
+    </script>
+
+    <div id="custom test"></div>
+
+    <div id="tableau" style="width:100%; height:50%">
+
+    </div>
+
+    <button id="Validation" onclick="sendElems()">Continue</button>
+</body>
+</html>

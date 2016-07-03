@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AdRater </title>
+    <meta charset="utf-8" />
+     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+     <link href="../CSS/Style.css" rel="stylesheet"/>
+ </head>
+ <body>
+
+
+     <div id="container">
+
+         <nav class="navbar navbar-inverse">
+             <div class="container-fluid">
+                 <ul class="nav navbar-nav">
+                     <li class="active"> <a href="#">Welcome to AdRater</a> </li>
+                     
+                 </ul>
+                 <form class="navbar-form navbar-right inline-form" autocomplete="off">
+                     <div class="form-group">
+                         <input type="search" class="input-sm form-control" placeholder="Recherche" id="brandName">
+                         <button type="button" class="btn btn-primary btn-sm" id="brandAdder"><span class="glyphicon glyphicon-eye-open"></span> Add a Brand</button>
+                     </div>
+                 </form>
+             </div>
+         </nav>
+        
+         <div style="display:none">
+             <iframe id="BList" src="brands.txt " ></iframe>
+         </div>
+
+  
+
+         <script>
+
+            var array = ["gaumont", "coca", "nivea", "evian"];
+
+             document.write("<div class=\"row\">");
+             for (var j = 0; j < array.length ; j++) {
+                document.write("<div id=" + array[j] + ">");
+                document.write("<form class=\"col-lg-offset-2 col-lg-3 well\">");
+                document.write("<legend style=\"text-align:center\"></legend>");
+                //document.write("<label for=\"text\">Brand : </label>");
+                document.write("<div id=\"Brand" + j + "\"  name=\"" + array[j] + "\">");
+                document.write("<div class=\"row\">");
+                document.write("<img class=\"img-responsive center-block\" src=\"../images/" + array[j] + ".png\" height=\"42\" width=\"84\"> ");
+                document.write("</div>");
+                document.write("</div>");
+                document.write("<label for=\"textarea\">Comment : </label>");
+                document.write("<textarea id=\"Commentaire" + j + "\" type=\"textarea\" class=\"form-control\" ></textarea>");
+                //document.write("<div class=\"row\" ><select id=\"source\" class=\"selectpicker\"><option>TELEVISION<option>CINEMA<option>INTERNET<option>AUTRE</select></div>");
+                document.write("<a href=\"#\" class=\"btn btn-default  col-md-offset-1 col-lg-5\" name=\"SubmitLiked|" + j + "\">");
+                document.write("<span class=\"glyphicon glyphicon-thumbs-up\" style=\"color:green;\"></span> Like");
+                document.write("</a>");
+                document.write("<a href=\"#\" class=\"btn btn-default col-md-offset-1 col-lg-5\" name=\"SubmitDisliked|" + j + "\">");
+                document.write("<span class=\"glyphicon glyphicon-thumbs-down\" style=\"color:red;\"></span> Dislike");
+                document.write("</a>");
+                document.write("</form>");
+                document.write("</div>");
+             }
+
+             document.write("</div>");
+
+         </script>
+
+     </div>
+
+
+         <script src="../scripts/jquery-2.2.0.min.js"></script>
+         <script src="../scripts/jquery.signalR-2.2.0.min.js"></script>
+         <script src="../scripts/Constellation-1.8.0.js"></script>
+         <script src="../JS/AdRater.js"></script>
+</body>
+</html>
+

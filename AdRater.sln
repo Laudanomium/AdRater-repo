@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdRaterPackage", "AdRaterPackage\AdRaterPackage.csproj", "{499BAB84-3334-46E6-A1AA-95691B537E3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{BD28237D-C0D0-481B-890C-A81744755DE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E9E9A1AC-AC79-40D6-AE1E-1AAB2467777D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppliWeb1", "AppliWeb1\AppliWeb1.csproj", "{51AECCD8-3C0A-485A-B305-577B37F14424}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{499BAB84-3334-46E6-A1AA-95691B537E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499BAB84-3334-46E6-A1AA-95691B537E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499BAB84-3334-46E6-A1AA-95691B537E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499BAB84-3334-46E6-A1AA-95691B537E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51AECCD8-3C0A-485A-B305-577B37F14424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AECCD8-3C0A-485A-B305-577B37F14424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AECCD8-3C0A-485A-B305-577B37F14424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AECCD8-3C0A-485A-B305-577B37F14424}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{499BAB84-3334-46E6-A1AA-95691B537E3D} = {BD28237D-C0D0-481B-890C-A81744755DE0}
+		{51AECCD8-3C0A-485A-B305-577B37F14424} = {E9E9A1AC-AC79-40D6-AE1E-1AAB2467777D}
+	EndGlobalSection
+EndGlobal
